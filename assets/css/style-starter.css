@@ -4831,6 +4831,15 @@ input[type="button"].btn-block {
     box-sizing: border-box;
   }
   
+
+  .container-box-middle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Set height to fill viewport */
+  }
+
+  
   .box-wrap {
     /* flex: 1;
     display: flex;
