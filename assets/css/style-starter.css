@@ -15999,3 +15999,27 @@ div#small-dialog iframe {
     font-weight: 900;
     display: none;
 }
+
+.react-button {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .like-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .like-button:hover {
+    background-color: #0062cc;
+  }
+  
+  .like-count {
+    margin-left: 10px;
+  }
+  
