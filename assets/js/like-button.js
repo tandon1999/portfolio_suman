@@ -12,5 +12,5 @@ likeButton.addEventListener('click', () => {
   likeCount.textContent = count;
 
   // Disable the button to prevent multiple clicks
-  likeButton.disabled = true;
+//   likeButton.disabled = true;
 });
