@@ -16917,7 +16917,7 @@ div#small-dialog iframe {
     display: none;
 }
 
-.react-button {
+/* .react-button {
     display: flex;
     align-items: center;
     margin-top: 10px;
@@ -16938,4 +16938,66 @@ div#small-dialog iframe {
 
 .like-count {
     margin-left: 10px;
-}
+} */
+
+
+.like-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .like-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .like-icon {
+    display: inline-block;
+    margin-right: 5px;
+    transform: scale(1);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .like-icon i {
+    font-size: 20px;
+  }
+  
+  .like-text {
+    margin-right: 5px;
+  }
+  
+  .like-count {
+    margin-left: 5px;
+  }
+  
+  /* .like-button:hover .like-icon {
+    transform: scale(1.2);
+  } */
+  
+  .like-button:active .like-icon {
+    transform: scale(0.8);
+  }
+  
+  .like-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .like-button:disabled .like-icon {
+    transform: scale(1);
+  }
+  
+  .thumb-up {
+    color:#5b65a4;
+  }
+  
