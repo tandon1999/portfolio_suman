@@ -16974,3 +16974,20 @@ div#small-dialog iframe {
 .item .box-wrap .love-icon {
     margin-right: 5px;
 }
+
+.my-social {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .mobile-position {
+    position: absolute;
+    top: 13px;
+    right: -50px;
+}
+
+  .navigation {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+    
