@@ -1,20 +1,4 @@
-/*
 
-Quicksand 1.2.2
-
-Reorder and filter items with a nice shuffling animation.
-
-Copyright (c) 2010 Jacek Galanciak (razorjack.net) and agilope.com
-Big thanks for Piotr Petrus (riddle.pl) for deep code review and wonderful docs & demos.
-
-Dual licensed under the MIT and GPL version 2 licenses.
-http://github.com/jquery/jquery/blob/master/MIT-LICENSE.txt
-http://github.com/jquery/jquery/blob/master/GPL-LICENSE.txt
-
-Project site: http://razorjack.net/quicksand
-Github site: http://github.com/razorjack/quicksand
-
-*/
 
 (function ($) {
     $.fn.quicksand = function (collection, customOptions) {     
