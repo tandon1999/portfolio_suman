@@ -645,6 +645,28 @@
     </script>
     <!-- //script for services -->
 
+    <script>
+        // Check if project is already liked
+const isLiked = localStorage.getItem('project-2-liked');
+if (isLiked === 'true') {
+  // If project is already liked, update like count and change button style
+  document.querySelector('#like-count').textContent = likes + 1;
+  document.querySelector('#like-button').classList.add('liked');
+}
+
+// Add event listener to like button
+likeButton.addEventListener('click', () => {
+  // Get current like count
+  const currentLikes = Number(document.querySelector('#like-count').textContent);
+  // Update like count on the page
+  document.querySelector('#like-count').textContent = currentLikes + 1;
+  // Add 'liked' class to like button
+  document.querySelector('#like-button').classList.add('liked');
+  // Store project like status in localStorage
+  localStorage.setItem('project-2-liked', 'true');
+});
+
+    </script>
     <!-- script for tesimonials carousel slider -->
     <script>
         $(document).ready(function () {
