@@ -11,6 +11,7 @@
     <!-- google fonts -->
     <link href="//fonts.googleapis.com/css2?family=Jost:wght@300;400;600&display=swap" rel="stylesheet">
 
+
     <!-- Template CSS -->
     <link rel="stylesheet" href="assets/css/style-starter.css">
     <link rel="shortcut icon" href="assets/images/Logo.png">
@@ -171,9 +172,13 @@
                                         <a href="https://drive.google.com/file/d/1Ot4tn-SlyO-K1D8WNsj0DkJCP5c17j7a/view?usp=share_link"
                                             class="read">Read more</a>
                                         <div class="react-button">
-                                            <button class="like-button">
+                                            <button class="like-button" onclick="likeProject(1)">
                                                 <span class="like-icon"> <i class="fa fa-thumbs-up thumb-up"></i></span>
-                                                <span class="like-count">0</span>
+                                                <span class="like-count" id="project-1-likes">0</span>
+                                            </button>
+                                            <button class="love-button" onclick="loveProject(1)">
+                                                <span class="love-icon"> <i class="fa fa-heart heart"></i></span>
+                                                <span class="love-count" id="project-1-loves">0</span>
                                             </button>
                                         </div>
                                     </div>
@@ -193,17 +198,20 @@
                                         <p>It is a digital platform that connects patients with
                                             healthcare providers and offers virtual consultation, medical records
                                             management, and appointment scheduling.</p>
-                                      
+
                                         <a href="https://drive.google.com/file/d/14fBUmrj-4qVtgcxaEkeyy6_E0fnUohA8/view?usp=share_link"
                                             class="read">Read more</a>
                                         <div class="react-button">
-                                            <button class="like-button">
+                                            <button class="like-button" onclick="likeProject(2)">
                                                 <span class="like-icon"> <i class="fa fa-thumbs-up thumb-up"></i></span>
-                                                <span class="like-count">0</span>
+                                                <span class="like-count" id="project-2-likes">0</span>
+                                            </button>
+                                            <button class="love-button" onclick="loveProject(2)">
+                                                <span class="love-icon"> <i class="fa fa-heart heart"></i></span>
+                                                <span class="love-count" id="project-2-loves">0</span>
                                             </button>
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
 
@@ -221,15 +229,20 @@
                                             journals, and multimedia, including cataloging, circulation, and inventory
                                             management.</p>
                                         <a href="https://drive.google.com/file/d/1gkGIt_YrS0R6QJaSpTIftKLbA0ECNhly/view?usp=share_link"
-                                            class="read">Read more</a><br><br>
+                                            class="read">Read more</a>
                                         <div class="react-button">
-                                            <button class="like-button">
+                                            <button class="like-button" onclick="likeProject(3)">
                                                 <span class="like-icon"> <i class="fa fa-thumbs-up thumb-up"></i></span>
-                                                <span class="like-count">0</span>
+                                                <span class="like-count" id="project-3-likes">0</span>
+                                            </button>
+                                            <button class="love-button" onclick="loveProject(3)">
+                                                <span class="love-icon"> <i class="fa fa-heart heart"></i></span>
+                                                <span class="love-count" id="project-3-loves">0</span>
                                             </button>
                                         </div>
                                     </div>
                                 </div>
+
                             </div>
 
                             <div class="item">
@@ -245,15 +258,20 @@
                                             within the notes of MIDI files, allowing for covert communication or data
                                             transfer.</p>
                                         <a href="https://github.com/tandon1999/Steganography-in-Standard-MIDI-Files-using-delta-time/blob/master/Steganography-in-Standard-MIDI-Files-using-delta-time.pdf"
-                                            class="read">Read more</a><br><br>
+                                            class="read">Read more</a>
                                         <div class="react-button">
-                                            <button class="like-button">
+                                            <button class="like-button" onclick="likeProject(4)">
                                                 <span class="like-icon"> <i class="fa fa-thumbs-up thumb-up"></i></span>
-                                                <span class="like-count">0</span>
+                                                <span class="like-count" id="project-4-likes">0</span>
+                                            </button>
+                                            <button class="love-button" onclick="loveProject(4)">
+                                                <span class="love-icon"> <i class="fa fa-heart heart"></i></span>
+                                                <span class="love-count" id="project-4-loves">0</span>
                                             </button>
                                         </div>
                                     </div>
                                 </div>
+
                             </div>
 
                             <div class="item">
@@ -269,15 +287,20 @@
                                         <p>A system that monitors and manages the water level in tanks to ensure optimal
                                             usage and prevent overflow or shortage.</p>
                                         <a href="https://drive.google.com/file/d/1DjwSVexbdcsvR67rvHyvz07wKwB4kngX/view?usp=share_link"
-                                            class="read">Read more</a><br><br><br>
+                                            class="read">Read more</a>
                                         <div class="react-button">
-                                            <button class="like-button">
+                                            <button class="like-button" onclick="likeProject(5)">
                                                 <span class="like-icon"> <i class="fa fa-thumbs-up thumb-up"></i></span>
-                                                <span class="like-count">0</span>
+                                                <span class="like-count" id="project-5-likes">0</span>
+                                            </button>
+                                            <button class="love-button" onclick="loveProject(5)">
+                                                <span class="love-icon"> <i class="fa fa-heart heart"></i></span>
+                                                <span class="love-count" id="project-5-loves">0</span>
                                             </button>
                                         </div>
                                     </div>
                                 </div>
+
                             </div>
 
                             <div class="item">
@@ -294,15 +317,21 @@
                                             people and organizations, including phone numbers, addresses, and other
                                             relevant details.</p>
                                         <a href="https://1000projects.org/phonebook-application-c-project-report.html"
-                                            class="read">Read more</a><br><br><br>
+                                            class="read">Read
+                                            more</a>
                                         <div class="react-button">
-                                            <button class="like-button">
+                                            <button class="like-button" onclick="likeProject(6)">
                                                 <span class="like-icon"> <i class="fa fa-thumbs-up thumb-up"></i></span>
-                                                <span class="like-count">0</span>
+                                                <span class="like-count" id="project-6-likes">0</span>
+                                            </button>
+                                            <button class="love-button" onclick="loveProject(6)">
+                                                <span class="love-icon"> <i class="fa fa-heart heart"></i></span>
+                                                <span class="love-count" id="project-6-loves">0</span>
                                             </button>
                                         </div>
                                     </div>
                                 </div>
+
                             </div>
 
                             <div class="item">
@@ -317,18 +346,24 @@
                                             </a>
                                         </h4>
                                         <p>Word prediction is a technology that suggests the next words or phrase as a
-                                            user types or need, based on statistical analysis and natural language processing.
-                                        </p><br><br>
+                                            user types or need, based on statistical analysis and natural language
+                                            processing.
+                                        </p>
                                         <a href="https://docs.google.com/document/d/1cN3TLiqySe4ae_dlR46zYH1oZUzIgLL5Ix9obmsn5Jc/edit?usp=share_link"
-                                            class="read">Read more</a><br>
+                                            class="read">Read more</a>
                                         <div class="react-button">
-                                            <button class="like-button">
+                                            <button class="like-button" onclick="likeProject(7)">
                                                 <span class="like-icon"> <i class="fa fa-thumbs-up thumb-up"></i></span>
-                                                <span class="like-count">0</span>
+                                                <span class="like-count" id="project-7-likes">0</span>
+                                            </button>
+                                            <button class="love-button" onclick="loveProject(7)">
+                                                <span class="love-icon"> <i class="fa fa-heart heart"></i></span>
+                                                <span class="love-count" id="project-7-loves">0</span>
                                             </button>
                                         </div>
                                     </div>
                                 </div>
+
                             </div>
 
 
@@ -347,13 +382,18 @@
                                         <a href="https://github.com/tandon1999/parallel_word_search_using_openMP/blob/master/readme.pdf"
                                             class="read">Read more</a>
                                         <div class="react-button">
-                                            <button class="like-button">
+                                            <button class="like-button" onclick="likeProject(8)">
                                                 <span class="like-icon"> <i class="fa fa-thumbs-up thumb-up"></i></span>
-                                                <span class="like-count">0</span>
+                                                <span class="like-count" id="project-8-likes">0</span>
+                                            </button>
+                                            <button class="love-button" onclick="loveProject(8)">
+                                                <span class="love-icon"> <i class="fa fa-heart heart"></i></span>
+                                                <span class="love-count" id="project-8-loves">0</span>
                                             </button>
                                         </div>
                                     </div>
                                 </div>
+
                             </div>
 
 
@@ -365,20 +405,26 @@
                                         </div>
                                         <h4 class="number">09</h4>
                                         <h4><a href="https://github.com/tandon1999/smart_irrigration_system_"
-                                                target="_blank">Smart Irrigation System</a></h4>
+                                                target="_blank">Smart
+                                                Irrigation System</a></h4>
                                         <p>An automated system that uses sensors to monitor soil moisture levels and
                                             weather data to optimize irrigation, saving water and improving crop yields.
                                         </p>
                                         <a href="https://github.com/tandon1999/smart_irrigration_system_/blob/master/SMART%20IRRRIGATION%20SYSTEM.pdf"
                                             class="read">Read more</a><br><br>
                                         <div class="react-button">
-                                            <button class="like-button">
+                                            <button class="like-button" onclick="likeProject(9)">
                                                 <span class="like-icon"> <i class="fa fa-thumbs-up thumb-up"></i></span>
-                                                <span class="like-count">0</span>
+                                                <span class="like-count" id="project-9-likes">0</span>
+                                            </button>
+                                            <button class="love-button" onclick="loveProject(9)">
+                                                <span class="love-icon"> <i class="fa fa-heart heart"></i></span>
+                                                <span class="love-count" id="project-9-loves">0</span>
                                             </button>
                                         </div>
                                     </div>
                                 </div>
+
                             </div>
 
 
@@ -467,6 +513,15 @@
         <button onclick="topFunction()" id="movetop" title="Go to top">
             <span class="fa fa-angle-up"></span>
         </button>
+
+        <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/9.4.1/firebase-app.js"></script>
+
+        <!-- Add Firebase products that you want to use -->
+        <script src="https://www.gstatic.com/firebasejs/9.4.1/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/9.4.1/firebase-firestore.js"></script>
+        <script src="assets/js/firebase.js"></script>
+
         <script>
             // When the user scrolls down 20px from the top of the document, show the button
             window.onscroll = function () {

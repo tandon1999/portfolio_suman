@@ -1,44 +1,29 @@
 
-// const likeButton = document.querySelector('.like-button');
-// const likeIcon = document.querySelector('.like-icon');
-// const likeCount = document.querySelector('.like-count');
-// let count = 0;
-// let isLiked = false;
-
-// likeButton.addEventListener('click', () => {
-//   if (isLiked) {
-//     count--;
-//     likeCount.textContent = count;
-//     likeButton.classList.remove('liked');
-//     likeIcon.classList.remove('unlike-icon');
-//     likeIcon.classList.add('like-icon');
-//     isLiked = false;
-//   } else {
-//     count++;
-//     likeCount.textContent = count;
-//     likeButton.classList.add('liked');
-//     likeIcon.classList.remove('like-icon');
-//     likeIcon.classList.add('unlike-icon');
-//     isLiked = true;
-//   }
-// });
 
 
+// Get all the like and love buttons on the page
+const buttons = document.querySelectorAll('.like-button, .love-button');
 
-    // Get the like buttons and count elements
-
-    const likeButtons = document.querySelectorAll('.like-button');
-    const likeCounts = document.querySelectorAll('.like-count');
-
-    // Add event listeners to the like buttons
-    likeButtons.forEach((button, index) => {
-        button.addEventListener('click', () => {
-            // Get the current like count
-            let count = parseInt(likeCounts[index].textContent);
-
-            // Increment the count and update the UI
-            count++;
-            likeCounts[index].textContent = count;
-        });
-    });
-
+// Loop through each button and add a click event listener
+buttons.forEach(button => {
+  // Add a click event listener to the button
+  button.addEventListener('click', () => {
+    // Get the current number of likes or loves
+    const count = button.querySelector('.like-count, .love-count');
+    let currentCount = Number(count.textContent);
+    // Check if the button has been liked or loved before
+    const isLikedOrLoved = button.classList.contains('liked');
+    // If the button is already liked or loved, remove the "liked" class and decrement the count
+    if (isLikedOrLoved) {
+      button.classList.remove('liked');
+      currentCount--;
+    }
+    // If the button hasn't been liked or loved, add the "liked" class and increment the count
+    else {
+      button.classList.add('liked');
+      currentCount++;
+    }
+    // Update the count on the button
+    count.textContent = currentCount;
+  });
+});
