@@ -1,4 +1,11 @@
-
+/*!
+* jquery.countup.js 1.0.3
+*
+* Copyright 2016, Adrián Guerra Marrero http://agmstudio.io @AGMStudio_io
+* Released under the MIT License
+*
+* Date: Oct 27, 2016
+*/
 (function( $ ){
   "use strict";
 
@@ -59,12 +66,13 @@
             var f = function() {
                 $this.data('counterup-nums') && $this.data('counterup-nums').length && $this.text($this.data('counterup-nums').shift());
 
-                if ($this.data('counterup-nums') && $this.data('counterup-nums').length) {
-                    $this.text($this.data('counterup-nums').shift());
-                  } else {
-                    clearInterval(counterInterval);
-                  }
-                  
+                if ($this.data('counterup-nums').length) {
+                    setTimeout($this.data('counterup-func'),delay);
+                } else {
+                    delete $this.data('counterup-nums');
+                    $this.data('counterup-nums', null);
+                    $this.data('counterup-func', null);
+                }
             };
             $this.data('counterup-func', f);
 
