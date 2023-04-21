@@ -582,10 +582,15 @@ mark,
 .img-fluid {
     max-width: 60%;
     height: auto;
-    /* border: groove 0.5em rgb(44, 42, 42); */
-    /* border-color: white; */
-    border-radius: 100px;
+   
+    border-radius: 10px;
 }
+
+
+.full-width{
+    max-width: 100%;
+}
+
 
 .img-thumbnail {
     padding: 0.25rem;
