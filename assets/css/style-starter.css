@@ -580,7 +580,7 @@ mark,
 }
 
 .img-fluid {
-    max-width: 100%;
+    max-width: 60%;
     height: auto;
    
     border-radius: 10px;
@@ -16996,3 +16996,66 @@ div#small-dialog iframe {
     -webkit-text-fill-color: #ffffff;
   }
   
+
+  /*curson on about page */
+  .carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 999;
+}
+.carousel-control-prev {
+    left: -50px;
+}
+.carousel-control-next {
+    right: -30px;
+}
+
+
+
+/* .container-box-middle {
+    position: center; 
+    padding-top: 50px; 
+}  */
+
+.carousel-indicators {
+    position: absolute; /* Set position to absolute */
+    left: 35%; /* Set left position to center */
+    bottom:-8%; /* Set bottom position to 0 */
+    transform: translateX(-50%); /* Center horizontally */
+} */
+
+.carousel-indicators li {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: 1rem;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #fff;
+    border: none;
+    border-radius: 50%;
+}
+
+.carousel-indicators .active {
+    background-color: #000;
+}
+
+.carousel-indicators .down-icon{
+    background-image: url('down-arrow.png');
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    margin-top: 10px; /* Add margin to*/
+}
+.container-box-middle {
+  position: relative;
+  padding-top: 50px;
+}
+
+/*the about section achievement box*/
+
+.item {
+  margin: 0 auto;
+}
