@@ -22,10 +22,11 @@ function submitForm(e)
     e.preventDefault();
     var name=getElementVal('name');
     var email=getElementVal('emailid');
+    var phnumber=getElementVal('phnumber')
     var subject=getElementVal('subject');
     var message=getElementVal('message');
 
-    saveMessages(name, emailid,subject,message);
+    saveMessages(name, emailid,phnumber,subject,message);
     
     document.querySelector(".alert").style.display = "block";
 
@@ -37,12 +38,13 @@ function submitForm(e)
       document.getElementById("contactForm").reset();
 }
 
-const saveMessages=(name,emailid,subject,message)=>
+const saveMessages=(name,emailid,phnumber, subject,message)=>
 {
   var newContactForm= contactFormDB.push();  
   newContactForm.set({
     Name: name,
     email: emailid,
+    phnumber: phnumber,
     Subject: subject,
     Message: message,
 
