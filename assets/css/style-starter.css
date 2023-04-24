@@ -583,12 +583,16 @@ mark,
     max-width: 60%;
     height: auto;
    
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 
 .full-width{
     max-width: 100%;
+}
+
+.full-circle{
+    border-radius: 300px;
 }
 
 
@@ -17113,4 +17117,27 @@ div#small-dialog iframe {
     transition: box-shadow 0.2s ease-in-out;
   }
 
+  
+
+  /*animated image */
+  .square-img {
+    width: 300px; /* set the width of the square */
+    height: 300px; /* set the height of the square */
+    border-radius: 20px; /* set the border radius to create rounded corners */
+    /* background-image: url("assets/css/Untitled design.gif"); set the URL of the animated image */
+    background-size: cover; /* ensure the image fills the square */
+    animation: pulse 2s infinite; /* add an animation to the image */
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
   
