@@ -11,6 +11,10 @@
     <!-- google fonts -->
     <link href="//fonts.googleapis.com/css2?family=Jost:wght@300;400;600&display=swap" rel="stylesheet">
 
+<!-- Owl Carousel CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-0G7ZvgFUGfHW6c/BhO/HswfV0cjbks43h0uzGQ21d5PZV7/sxziw1sg3i3KOyS+mJj01E0n76EmCDWY9I4fBtQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
 
     <!-- Template CSS -->
     <link rel="stylesheet" href="assets/css/style-starter.css">
@@ -163,15 +167,7 @@
                 <div class="row" style="margin-bottom: -160px !important;">
                     <div class="container-box-middle">
                         <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                            <!-- Indicators -->
-                            <!-- <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a> -->
+                           
 
                             <ol class="carousel-indicators">
                                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -188,8 +184,10 @@
 
                             <!-- Wrapper for slides -->
                             <div class="carousel-inner">
+                                
                                 <div class="carousel-item active">
                                     <div class="col-lg-6 item">
+                                        
                                         <div class="card">
                                             <div class="box-wrap">
                                                 <div class="icon">
@@ -846,6 +844,44 @@
     <!-- bootstrap js -->
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/like-button.js"></script>
+    <script>
+        $(document).ready(function() {
+          var carouselWrapper = $('.carousel-wrapper');
+          var slides = $('.carousel-slide');
+          var slideWidth = slides.first().outerWidth() + 10;
+          var currentPosition = 0;
+          var touchStartX = 0;
+          var touchEndX = 0;
+        
+          function moveSlide(direction) {
+            if (direction === 'left' && currentPosition < (slides.length - 1) * slideWidth) {
+              currentPosition += slideWidth;
+              carouselWrapper.css('transform', 'translateX(-' + currentPosition + 'px)');
+            } else if (direction === 'right' && currentPosition > 0) {
+              currentPosition -= slideWidth;
+              carouselWrapper.css('transform', 'translateX(-' + currentPosition + 'px)');
+            }
+          }
+        
+          $('.carousel-container').on('touchstart', function(event) {
+            touchStartX = event.touches[0].pageX;
+          });
+        
+          $('.carousel-container').on('touchmove', function(event) {
+            touchEndX = event.touches[0].pageX;
+          });
+        
+          $('.carousel-container').on('touchend', function(event) {
+            var direction;
+            if (touchStartX < touchEndX) {
+              direction = 'right';
+            } else {
+              direction = 'left';
+            }
+            moveSlide(direction);
+          });
+        });
+        </script>
 
 </body>
 
