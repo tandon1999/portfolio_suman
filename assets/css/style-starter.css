@@ -17033,13 +17033,17 @@ div#small-dialog iframe {
     margin: 1rem;
     text-indent: -999px;
     cursor: pointer;
-    background-color: #fff;
+    background-color: #000;
     border: none;
     border-radius: 50%;
 }
 
 .carousel-indicators .active {
     background-color: #e86c17;
+}
+
+.carousel-indicators li:not(.active) {
+    background-color:#6829d6;
 }
 
 .carousel-indicators .down-icon{
@@ -17061,3 +17065,52 @@ div#small-dialog iframe {
 }
 
 
+
+
+/*transisiton effect*/
+.carousel-item {
+    transform-style: preserve-3d;
+    transition: transform 1s ease-out;
+  }
+  
+  .carousel-item.active,
+  .carousel-item-next,
+  .carousel-item-prev {
+    transform: translateX(0);
+  }
+  
+  .carousel-item-next.active,
+  .carousel-item-prev.active {
+    transform: rotateY(-180deg);
+  }
+  
+  .carousel-item-next,
+  .carousel-item-prev {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+  }
+  
+  .carousel-item-next {
+    transform: rotateY(180deg);
+  }
+  
+  .carousel-item-prev {
+    transform: rotateY(-180deg);
+  }
+  
+
+
+
+  .carousel-caption:hover {
+    color: #e86c17;
+    transition: color 0.2s ease-in-out;
+  }
+
+  .carousel-item:hover {
+    box-shadow: 0px 0px 10px #888;
+    transition: box-shadow 0.2s ease-in-out;
+  }
+
+  

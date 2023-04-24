@@ -52,9 +52,9 @@
                             <div></div>
                         </div>
                     </ul>
-                    
+
                 </div>
-                 <!-- <div class="my-social mt-lg-10 mt-1"> 
+                <!-- <div class="my-social mt-lg-10 mt-1"> 
                     <ul class="social m-0 p-0">
                         <li><a href="https://www.facebook.com/suman.tandan.1999/" target="blank"><span
                                     class="fa fa-facebook-official"></span></a></li>
@@ -154,296 +154,346 @@
         <div class="blog py-5" id="services">
             <div class="container py-lg-5">
                 <h5 class="title-small text-center">Projects</h5>
-                <h3 class="title-big text-center mb-sm-5 mb-4">Projects I have done</h3>
+                <h3 class="title-big text-center mb-sm-5 mb-3" style="margin-bottom: -100px !important;">Projects I have done</h3>
+
+
+                <!--edited-->
+
                 <div class="row">
-                    <div class="col-md-12 mx-auto pr-2">
-                        <div class="owl-two owl-carousel owl-theme">
+                    <div class="container-box-middle">
+                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#myCarousel" data-slide-to="1"></li>
+                                <li data-target="#myCarousel" data-slide-to="2"></li>
+                                <li data-target="#myCarousel" data-slide-to="3"></li>
+                                <li data-target="#myCarousel" data-slide-to="4"></li>
+                                <li data-target="#myCarousel" data-slide-to="5"></li>
+                                <li data-target="#myCarousel" data-slide-to="6"></li>
+                                <li data-target="#myCarousel" data-slide-to="7"></li>
+                                <li data-target="#myCarousel" data-slide-to="8"></li>
+                                <!-- <li data-target="#myCarousel" data-slide-to="9"></li> -->
+                            </ol>
 
-                            <div class="item">
-                                <div class="card">
-                                    <div class="box-wrap">
-                                        <div class="icon">
-                                            <span class="fa fa-pencil-square-o"></span>
-                                        </div>
-                                        <h4 class="number">01</h4>
-                                        <h4><a href="https://github.com/tandon1999/#" target="_blank">Secure Chat
-                                                Application Using AES</a></h4>
-                                        <p>An encrypted messaging app that uses the Advanced Encryption Standard (AES)
-                                            algorithm for secure communication between users.</p>
-                                        <a href="https://drive.google.com/file/d/1Ot4tn-SlyO-K1D8WNsj0DkJCP5c17j7a/view?usp=share_link"
-                                            class="read">Read more</a>
-                                        <div class="react-button">
-                                            <button class="like-button" onclick="likeProject(1)">
-                                                <span class="like-icon"> <i class="fa fa-thumbs-up thumb-up"></i></span>
-                                                <span class="like-count" id="project-1-likes"></span>
-                                            </button>
-                                            <button class="love-button" onclick="loveProject(1)">
-                                                <span class="love-icon"> <i class="fa fa-heart heart"></i></span>
-                                                <span class="love-count" id="project-1-loves"></span>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="item">
-                                <div class="card">
-                                    <div class="box-wrap">
-                                        <div class="icon">
-                                            <span class="fa fa-pencil-square-o"></span>
-                                        </div>
-                                        <h4 class="number">02</h4>
-                                        <h4><a href="https://github.com/tandon1999/E-Health-Care-System"
-                                                target="_blank">Online Health
-                                                Care System</a></h4>
-                                        <p>It is a digital platform that connects patients with
-                                            healthcare providers and offers virtual consultation, medical records
-                                            management, and appointment scheduling.</p>
-
-                                        <a href="https://drive.google.com/file/d/14fBUmrj-4qVtgcxaEkeyy6_E0fnUohA8/view?usp=share_link"
-                                            class="read">Read more</a>
-                                        <!-- <div class="react-button">
-
-                                            <button class="like-button" data-project-id="2" onclick="likeProject(2)">
-                                                <span class="like-icon"> <i class="fa fa-thumbs-up thumb-up"></i></span>
-
-                                                <p>likes: <span class="like-count" id="project-2-likes">0</span></p>
-                                            </button>
-                                            <button class="love-button" data-project-id="2" onclick="loveProject(2)">
-                                                <span class="love-icon"> <i class="fa fa-heart heart"></i></span>
-
-                                                <p>loves: <span class="love-count" id="project-2-loves">0</span></p>
-                                            </button>
-
-
-                                        </div> -->
-                                        <div class="react-button">
-                                            <button class="like-button" onclick="likeProject(1)">
-                                                <span class="like-icon"> <i class="fa fa-thumbs-up thumb-up"></i></span>
-                                                <span class="like-count" id="project-1-likes"></span>
-                                            </button>
-                                            <button class="love-button" onclick="loveProject(1)">
-                                                <span class="love-icon"> <i class="fa fa-heart heart"></i></span>
-                                                <span class="love-count" id="project-1-loves"></span>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="item">
-                                <div class="card">
-                                    <div class="box-wrap">
-                                        <div class="icon">
-                                            <span class="fa fa-pencil-square-o"></span>
-                                        </div>
-                                        <h4 class="number">03</h4>
-                                        <h4><a href="https://github.com/tandon1999/LIBRARY-MANAGEMENT-SYSTEM"
-                                                target="_blank">Library
-                                                Manangement System</a></h4>
-                                        <p>A computerized system for managing library resources, such as books,
-                                            journals, and multimedia, including cataloging, circulation, and inventory
-                                            management.</p>
-                                        <a href="https://drive.google.com/file/d/1gkGIt_YrS0R6QJaSpTIftKLbA0ECNhly/view?usp=share_link"
-                                            class="read">Read more</a>
-                                        <div class="react-button">
-                                            <button class="like-button" onclick="likeProject(3)">
-                                                <span class="like-icon"> <i class="fa fa-thumbs-up thumb-up"></i></span>
-                                                <span class="like-count" id="project-3-likes"></span>
-                                            </button>
-                                            <button class="love-button" onclick="loveProject(3)">
-                                                <span class="love-icon"> <i class="fa fa-heart heart"></i></span>
-                                                <span class="love-count" id="project-3-loves"></span>
-                                            </button>
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="col-lg-6 item">
+                                        <div class="card">
+                                            <div class="box-wrap">
+                                                <div class="icon">
+                                                    <span class="fa fa-pencil-square-o"></span>
+                                                </div>
+                                                <h4 class="number">01</h4>
+                                                <h4><a href="https://github.com/tandon1999/#" target="_blank">Secure
+                                                        Chat
+                                                        Appliction Using AES</a></h4>
+                                                <p>An encrypted messaging app that uses the Advanced Encryption Standard
+                                                    (AES)
+                                                    algorithm for secure communication between users.</p>
+                                                <a href="https://drive.google.com/file/d/1Ot4tn-SlyO-K1D8WNsj0DkJCP5c17j7a/view?usp=share_link"
+                                                    class="read">Read more</a>
+                                                <div class="react-button">
+                                                    <button class="like-button" onclick="likeProject(1)">
+                                                        <span class="like-icon"> <i
+                                                                class="fa fa-thumbs-up thumb-up"></i></span>
+                                                        <span class="like-count" id="project-1-likes"></span>
+                                                    </button>
+                                                    <button class="love-button" onclick="loveProject(1)">
+                                                        <span class="love-icon"> <i
+                                                                class="fa fa-heart heart"></i></span>
+                                                        <span class="love-count" id="project-1-loves"></span>
+                                                    </button>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
 
-                            </div>
+                                <div class="carousel-item">
+                                    <div class="col-lg-6 item">
+                                        <div class="card">
+                                            <div class="box-wrap">
+                                                <div class="icon">
+                                                    <span class="fa fa-pencil-square-o"></span>
+                                                </div>
+                                                <h4 class="number">02</h4>
+                                                <h4><a href="https://github.com/tandon1999/E-Health-Care-System"
+                                                        target="_blank">Online Health
+                                                        Care System</a></h4>
+                                                <p>It is a digital platform that connects patients with
+                                                    healthcare providers and offers virtual consultation, medical
+                                                    records
+                                                    management, and appointment scheduling.</p>
 
-                            <div class="item">
-                                <div class="card">
-                                    <div class="box-wrap">
-                                        <div class="icon">
-                                            <span class="fa fa-pencil-square-o"></span>
-                                        </div>
-                                        <h4 class="number">04</h4>
-                                        <h4><a href="https://github.com/tandon1999/Steganography-in-Standard-MIDI-Files-using-delta-time"
-                                                target="_blank">Steganography in Standard MIDI Files</a></h4>
-                                        <p>Steganography in Standard MIDI Files is a technique of hiding secret data
-                                            within the notes of MIDI files, allowing for covert communication or data
-                                            transfer.</p>
-                                        <a href="https://github.com/tandon1999/Steganography-in-Standard-MIDI-Files-using-delta-time/blob/master/Steganography-in-Standard-MIDI-Files-using-delta-time.pdf"
-                                            class="read">Read more</a>
-                                        <div class="react-button">
-                                            <button class="like-button" onclick="likeProject(4)">
-                                                <span class="like-icon"> <i class="fa fa-thumbs-up thumb-up"></i></span>
-                                                <span class="like-count" id="project-4-likes"></span>
-                                            </button>
-                                            <button class="love-button" onclick="loveProject(4)">
-                                                <span class="love-icon"> <i class="fa fa-heart heart"></i></span>
-                                                <span class="love-count" id="project-4-loves"></span>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
+                                                <a href="https://drive.google.com/file/d/14fBUmrj-4qVtgcxaEkeyy6_E0fnUohA8/view?usp=share_link"
+                                                    class="read">Read more</a>
 
-                            </div>
-
-                            <div class="item">
-                                <div class="card">
-                                    <div class="box-wrap">
-                                        <div class="icon">
-                                            <span class="fa fa-pencil-square-o"></span>
-                                        </div>
-                                        <h4 class="number">05</h4>
-                                        <h4><a href="https://drive.google.com/file/d/1DjwSVexbdcsvR67rvHyvz07wKwB4kngX/view?usp=share_link"
-                                                target="_blank">Water
-                                                Level Tank Manangement System </a></h4>
-                                        <p>A system that monitors and manages the water level in tanks to ensure optimal
-                                            usage and prevent overflow or shortage.</p>
-                                        <a href="https://drive.google.com/file/d/1DjwSVexbdcsvR67rvHyvz07wKwB4kngX/view?usp=share_link"
-                                            class="read">Read more</a>
-                                        <div class="react-button">
-                                            <button class="like-button" onclick="likeProject(5)">
-                                                <span class="like-icon"> <i class="fa fa-thumbs-up thumb-up"></i></span>
-                                                <span class="like-count" id="project-5-likes"></span>
-                                            </button>
-                                            <button class="love-button" onclick="loveProject(5)">
-                                                <span class="love-icon"> <i class="fa fa-heart heart"></i></span>
-                                                <span class="love-count" id="project-5-loves"></span>
-                                            </button>
+                                                <div class="react-button">
+                                                    <button class="like-button" onclick="likeProject(1)">
+                                                        <span class="like-icon"> <i
+                                                                class="fa fa-thumbs-up thumb-up"></i></span>
+                                                        <span class="like-count" id="project-1-likes"></span>
+                                                    </button>
+                                                    <button class="love-button" onclick="loveProject(1)">
+                                                        <span class="love-icon"> <i
+                                                                class="fa fa-heart heart"></i></span>
+                                                        <span class="love-count" id="project-1-loves"></span>
+                                                    </button>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
 
-                            </div>
-
-                            <div class="item">
-                                <div class="card">
-                                    <div class="box-wrap">
-                                        <div class="icon">
-                                            <span class="fa fa-pencil-square-o"></span>
-                                        </div>
-                                        <h4 class="number">06</h4>
-                                        <h4><a href="https://github.com/tandon1999/Telephone-Diary"
-                                                target="_blank">Telephone Diary </a>
-                                        </h4>
-                                        <p>Telephone diary is a book or software that stores contact information for
-                                            people and organizations, including phone numbers, addresses, and other
-                                            relevant details.</p>
-                                        <a href="https://1000projects.org/phonebook-application-c-project-report.html"
-                                            class="read">Read
-                                            more</a>
-                                        <div class="react-button">
-                                            <button class="like-button" onclick="likeProject(6)">
-                                                <span class="like-icon"> <i class="fa fa-thumbs-up thumb-up"></i></span>
-                                                <span class="like-count" id="project-6-likes"></span>
-                                            </button>
-                                            <button class="love-button" onclick="loveProject(6)">
-                                                <span class="love-icon"> <i class="fa fa-heart heart"></i></span>
-                                                <span class="love-count" id="project-6-loves"></span>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            <div class="item">
-                                <div class="card">
-                                    <div class="box-wrap">
-                                        <div class="icon">
-                                            <span class="fa fa-pencil-square-o"></span>
-                                        </div>
-                                        <h4 class="number">07</h4>
-                                        <h4><a href="https://github.com/tandon1999/word_prediction-"
-                                                target="_blank">Word Prediction
-                                            </a>
-                                        </h4>
-                                        <p>Word prediction is a technology that suggests the next words or phrase as a
-                                            user types or need, based on statistical analysis and natural language
-                                            processing.
-                                        </p>
-                                        <a href="https://docs.google.com/document/d/1cN3TLiqySe4ae_dlR46zYH1oZUzIgLL5Ix9obmsn5Jc/edit?usp=share_link"
-                                            class="read">Read more</a>
-                                        <div class="react-button">
-                                            <button class="like-button" onclick="likeProject(7)">
-                                                <span class="like-icon"> <i class="fa fa-thumbs-up thumb-up"></i></span>
-                                                <span class="like-count" id="project-7-likes"></span>
-                                            </button>
-                                            <button class="love-button" onclick="loveProject(7)">
-                                                <span class="love-icon"> <i class="fa fa-heart heart"></i></span>
-                                                <span class="love-count" id="project-7-loves"></span>
-                                            </button>
+                                <div class="carousel-item">
+                                    <div class="col-lg-6 item">
+                                        <div class="card">
+                                            <div class="box-wrap">
+                                                <div class="icon">
+                                                    <span class="fa fa-pencil-square-o"></span>
+                                                </div>
+                                                <h4 class="number">03</h4>
+                                                <h4><a href="https://github.com/tandon1999/LIBRARY-MANAGEMENT-SYSTEM"
+                                                        target="_blank">Library
+                                                        Manangement System</a></h4>
+                                                <p>A computerized system for managing library resources, such as books,
+                                                    journals, and multimedia, including cataloging, circulation, and
+                                                    inventory
+                                                    management.</p>
+                                                <a href="https://drive.google.com/file/d/1gkGIt_YrS0R6QJaSpTIftKLbA0ECNhly/view?usp=share_link"
+                                                    class="read">Read more</a>
+                                                <div class="react-button">
+                                                    <button class="like-button" onclick="likeProject(3)">
+                                                        <span class="like-icon"> <i
+                                                                class="fa fa-thumbs-up thumb-up"></i></span>
+                                                        <span class="like-count" id="project-3-likes"></span>
+                                                    </button>
+                                                    <button class="love-button" onclick="loveProject(3)">
+                                                        <span class="love-icon"> <i
+                                                                class="fa fa-heart heart"></i></span>
+                                                        <span class="love-count" id="project-3-loves"></span>
+                                                    </button>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
 
-                            </div>
 
-
-                            <div class="item">
-                                <div class="card">
-                                    <div class="box-wrap">
-                                        <div class="icon">
-                                            <span class="fa fa-pencil-square-o"></span>
-                                        </div>
-                                        <h4 class="number">08</h4>
-                                        <h4><a href="https://github.com/tandon1999/parallel_word_search_using_openMP"
-                                                target="_blank">Parallel word search using openMP</a></h4>
-                                        <p>Parallel word search using openMP is a technique of searching words in
-                                            multiple files simultaneously to improve the performance and speed of the
-                                            search process.</p>
-                                        <a href="https://github.com/tandon1999/parallel_word_search_using_openMP/blob/master/readme.pdf"
-                                            class="read">Read more</a>
-                                        <div class="react-button">
-                                            <button class="like-button" onclick="likeProject(8)">
-                                                <span class="like-icon"> <i class="fa fa-thumbs-up thumb-up"></i></span>
-                                                <span class="like-count" id="project-8-likes"></span>
-                                            </button>
-                                            <button class="love-button" onclick="loveProject(8)">
-                                                <span class="love-icon"> <i class="fa fa-heart heart"></i></span>
-                                                <span class="love-count" id="project-8-loves"></span>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-
-
-                            <div class="item">
-                                <div class="card">
-                                    <div class="box-wrap">
-                                        <div class="icon">
-                                            <span class="fa fa-pencil-square-o"></span>
-                                        </div>
-                                        <h4 class="number">09</h4>
-                                        <h4><a href="https://github.com/tandon1999/smart_irrigration_system_"
-                                                target="_blank">Smart
-                                                Irrigation System</a></h4>
-                                        <p>An automated system that uses sensors to monitor soil moisture levels and
-                                            weather data to optimize irrigation, saving water and improving crop yields.
-                                        </p>
-                                        <a href="https://github.com/tandon1999/smart_irrigration_system_/blob/master/SMART%20IRRRIGATION%20SYSTEM.pdf"
-                                            class="read">Read more</a><br><br>
-                                        <div class="react-button">
-                                            <button class="like-button" onclick="likeProject(9)">
-                                                <span class="like-icon"> <i class="fa fa-thumbs-up thumb-up"></i></span>
-                                                <span class="like-count" id="project-9-likes"></span>
-                                            </button>
-                                            <button class="love-button" onclick="loveProject(9)">
-                                                <span class="love-icon"> <i class="fa fa-heart heart"></i></span>
-                                                <span class="love-count" id="project-9-loves"></span>
-                                            </button>
+                                <div class="carousel-item">
+                                    <div class="col-lg-6 item">
+                                        <div class="card">
+                                            <div class="box-wrap">
+                                                <div class="icon">
+                                                    <span class="fa fa-pencil-square-o"></span>
+                                                </div>
+                                                <h4 class="number">04</h4>
+                                                <h4><a href="https://github.com/tandon1999/Steganography-in-Standard-MIDI-Files-using-delta-time"
+                                                        target="_blank">Steganography in Standard MIDI Files</a></h4>
+                                                <p>Steganography in Standard MIDI Files is a technique of hiding secret
+                                                    data
+                                                    within the notes of MIDI files, allowing for covert communication or
+                                                    data
+                                                    transfer.</p>
+                                                <a href="https://github.com/tandon1999/Steganography-in-Standard-MIDI-Files-using-delta-time/blob/master/Steganography-in-Standard-MIDI-Files-using-delta-time.pdf"
+                                                    class="read">Read more</a>
+                                                <div class="react-button">
+                                                    <button class="like-button" onclick="likeProject(4)">
+                                                        <span class="like-icon"> <i
+                                                                class="fa fa-thumbs-up thumb-up"></i></span>
+                                                        <span class="like-count" id="project-4-likes"></span>
+                                                    </button>
+                                                    <button class="love-button" onclick="loveProject(4)">
+                                                        <span class="love-icon"> <i
+                                                                class="fa fa-heart heart"></i></span>
+                                                        <span class="love-count" id="project-4-loves"></span>
+                                                    </button>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
 
+                                <div class="carousel-item">
+                                    <div class="col-lg-6 item">
+                                        <div class="card">
+                                            <div class="box-wrap">
+                                                <div class="icon">
+                                                    <span class="fa fa-pencil-square-o"></span>
+                                                </div>
+                                                <h4 class="number">05</h4>
+                                                <h4><a href="https://drive.google.com/file/d/1DjwSVexbdcsvR67rvHyvz07wKwB4kngX/view?usp=share_link"
+                                                        target="_blank">Water
+                                                        Level Tank Manangement System </a></h4>
+                                                <p>A system that monitors and manages the water level in tanks to ensure
+                                                    optimal
+                                                    usage and prevent overflow or shortage.</p>
+                                                <a href="https://drive.google.com/file/d/1DjwSVexbdcsvR67rvHyvz07wKwB4kngX/view?usp=share_link"
+                                                    class="read">Read more</a>
+                                                <div class="react-button">
+                                                    <button class="like-button" onclick="likeProject(5)">
+                                                        <span class="like-icon"> <i
+                                                                class="fa fa-thumbs-up thumb-up"></i></span>
+                                                        <span class="like-count" id="project-5-likes"></span>
+                                                    </button>
+                                                    <button class="love-button" onclick="loveProject(5)">
+                                                        <span class="love-icon"> <i
+                                                                class="fa fa-heart heart"></i></span>
+                                                        <span class="love-count" id="project-5-loves"></span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <div class="col-lg-6 item">
+                                        <div class="card">
+                                            <div class="box-wrap">
+                                                <div class="icon">
+                                                    <span class="fa fa-pencil-square-o"></span>
+                                                </div>
+                                                <h4 class="number">06</h4>
+                                                <h4><a href="https://github.com/tandon1999/Telephone-Diary"
+                                                        target="_blank">Telephone Diary </a>
+                                                </h4>
+                                                <p>Telephone diary is a book or software that stores contact information
+                                                    for
+                                                    people and organizations, including phone numbers, addresses, and
+                                                    other
+                                                    relevant details.</p>
+                                                <a href="https://1000projects.org/phonebook-application-c-project-report.html"
+                                                    class="read">Read
+                                                    more</a>
+                                                <div class="react-button">
+                                                    <button class="like-button" onclick="likeProject(6)">
+                                                        <span class="like-icon"> <i
+                                                                class="fa fa-thumbs-up thumb-up"></i></span>
+                                                        <span class="like-count" id="project-6-likes"></span>
+                                                    </button>
+                                                    <button class="love-button" onclick="loveProject(6)">
+                                                        <span class="love-icon"> <i
+                                                                class="fa fa-heart heart"></i></span>
+                                                        <span class="love-count" id="project-6-loves"></span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <div class="col-lg-6 item">
+                                        <div class="card">
+                                            <div class="box-wrap">
+                                                <div class="icon">
+                                                    <span class="fa fa-pencil-square-o"></span>
+                                                </div>
+                                                <h4 class="number">07</h4>
+                                                <h4><a href="https://github.com/tandon1999/word_prediction-"
+                                                        target="_blank">Word Prediction
+                                                    </a>
+                                                </h4>
+                                                <p>Word prediction is a technology that suggests the next words or
+                                                    phrase as a
+                                                    user types or need, based on statistical analysis and natural
+                                                    language
+                                                    processing.
+                                                </p>
+                                                <a href="https://docs.google.com/document/d/1cN3TLiqySe4ae_dlR46zYH1oZUzIgLL5Ix9obmsn5Jc/edit?usp=share_link"
+                                                    class="read">Read more</a>
+                                                <div class="react-button">
+                                                    <button class="like-button" onclick="likeProject(7)">
+                                                        <span class="like-icon"> <i
+                                                                class="fa fa-thumbs-up thumb-up"></i></span>
+                                                        <span class="like-count" id="project-7-likes"></span>
+                                                    </button>
+                                                    <button class="love-button" onclick="loveProject(7)">
+                                                        <span class="love-icon"> <i
+                                                                class="fa fa-heart heart"></i></span>
+                                                        <span class="love-count" id="project-7-loves"></span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <div class="col-lg-6 item">
+                                        <div class="card">
+                                            <div class="box-wrap">
+                                                <div class="icon">
+                                                    <span class="fa fa-pencil-square-o"></span>
+                                                </div>
+                                                <h4 class="number">08</h4>
+                                                <h4><a href="https://github.com/tandon1999/parallel_word_search_using_openMP"
+                                                        target="_blank">Parallel word search using openMP</a></h4>
+                                                <p>Parallel word search using openMP is a technique of searching words
+                                                    in
+                                                    multiple files simultaneously to improve the performance and speed
+                                                    of the
+                                                    search process.</p>
+                                                <a href="https://github.com/tandon1999/parallel_word_search_using_openMP/blob/master/readme.pdf"
+                                                    class="read">Read more</a>
+                                                <div class="react-button">
+                                                    <button class="like-button" onclick="likeProject(8)">
+                                                        <span class="like-icon"> <i
+                                                                class="fa fa-thumbs-up thumb-up"></i></span>
+                                                        <span class="like-count" id="project-8-likes"></span>
+                                                    </button>
+                                                    <button class="love-button" onclick="loveProject(8)">
+                                                        <span class="love-icon"> <i
+                                                                class="fa fa-heart heart"></i></span>
+                                                        <span class="love-count" id="project-8-loves"></span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <div class="col-lg-6 item">
+                                        <div class="card">
+                                            <div class="box-wrap">
+                                                <div class="icon">
+                                                    <span class="fa fa-pencil-square-o"></span>
+                                                </div>
+                                                <h4 class="number">09</h4>
+                                                <h4><a href="https://github.com/tandon1999/smart_irrigration_system_"
+                                                        target="_blank">Smart
+                                                        Irrigation System</a></h4>
+                                                <p>An automated system that uses sensors to monitor soil moisture levels
+                                                    and
+                                                    weather data to optimize irrigation, saving water and improving crop
+                                                    yields.
+                                                </p>
+                                                <a href="https://github.com/tandon1999/smart_irrigration_system_/blob/master/SMART%20IRRRIGATION%20SYSTEM.pdf"
+                                                    class="read">Read more</a><br><br>
+                                                <div class="react-button">
+                                                    <button class="like-button" onclick="likeProject(9)">
+                                                        <span class="like-icon"> <i
+                                                                class="fa fa-thumbs-up thumb-up"></i></span>
+                                                        <span class="like-count" id="project-9-likes"></span>
+                                                    </button>
+                                                    <button class="love-button" onclick="loveProject(9)">
+                                                        <span class="love-icon"> <i
+                                                                class="fa fa-heart heart"></i></span>
+                                                        <span class="love-count" id="project-9-loves"></span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
                             </div>
-
-
                         </div>
                     </div>
                 </div>
