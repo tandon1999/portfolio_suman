@@ -16974,15 +16974,15 @@ div#small-dialog iframe {
     margin-right: 5px;
   }
   
-  .my-social {
+  /* .my-social {
     display: flex;
     flex-wrap: wrap;
-  }
+  } */
   
-  .mobile-position {
+  /* .mobile-position {
     position: absolute;
-    top: 13px;
-    right: -50px;
+    top: 1px;
+    right: -30px;
   }
   
   .navigation {
@@ -16990,7 +16990,7 @@ div#small-dialog iframe {
     top: 0;
     right: 0;
   }
-  
+   */
   .item .box-wrap .liked:hover {
     background-image: none;
     -webkit-text-fill-color: #ffffff;
