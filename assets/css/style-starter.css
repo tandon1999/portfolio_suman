@@ -17063,6 +17063,7 @@ div#small-dialog iframe {
 
 .item {
   margin: 0 auto;
+  cursor: pointer;
 }
 
 
@@ -17136,5 +17137,14 @@ div#small-dialog iframe {
     100% {
       transform: scale(1);
     }
+  }
+  
+
+  .carousel-control-prev {
+    left: calc(50% - 400px);
+  }
+  
+  .carousel-control-next {
+    right: calc(50% - 400px);
   }
   
