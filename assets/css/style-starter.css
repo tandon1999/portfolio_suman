@@ -17070,7 +17070,7 @@ div#small-dialog iframe {
 /*transisiton effect*/
 .carousel-item {
     transform-style: preserve-3d;
-    transition: transform 1s ease-out;
+    transition: transform 0.5s ease-out;
   }
   
   .carousel-item.active,
