@@ -582,12 +582,14 @@ mark,
 .img-fluid {
     max-width: 90%;
     height: auto;
-   
-    border-radius: 20px;
+    border-radius: 100px;
 }
 
 
-.full-width{
+.img-fluid.full-width{
+    height: auto;
+   
+    border-radius: 20px;
     max-width: 100%;
 }
 
