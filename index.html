@@ -22,6 +22,7 @@
 </head>
 
 <body>
+    
     <!-- header -->
     <header id="site-header" class="fixed-top">
         <div class="container">
@@ -31,7 +32,7 @@
                 </a>
                  if logo is image enable this    -->
                 <a class="navbar-brand" href="index.html">
-                    <img src="assets/images/Logo.png" alt="Your logo" title="Your logo" style="height:35px;" />
+                    <img src="assets/images/Logo.png" alt="Your logo" title="Your logo"  style="height:35px;" />
                 </a>
                 <button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse"
                     data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
@@ -41,16 +42,19 @@
                     </span>
                 </button>
 
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02" >
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="index.html" style="--i:1;">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item @@about__active">
-                            <a class="nav-link" href="about.html">About</a>
+                            <a class="nav-link" href="about.html" style="--i:2;">About</a>
                         </li>
+                        <!-- <li class="nav-item @@contact__active">
+                            <a class="nav-link" href="skills.html" style="--i:3;;">Skills</a>
+                        </li> -->
                         <li class="nav-item @@contact__active">
-                            <a class="nav-link" href="contact.html">Contact&nbsp;&nbsp;</a>
+                            <a class="nav-link" href="contact.html" style="--i:4">Contact&nbsp;&nbsp;</a>
                         </li>
                         <div>
                             <div></div>
@@ -58,24 +62,9 @@
                     </ul>
 
                 </div>
-                <!-- <div class="my-social mt-lg-10 mt-1"> 
-                    <ul class="social m-0 p-0">
-                        <li><a href="https://www.facebook.com/suman.tandan.1999/" target="blank"><span
-                                    class="fa fa-facebook-official"></span></a></li>
-                        <li><a href="https://www.linkedin.com/in/suman-tandan-566734199/" target="blank"><span
-                                    class="fa fa-linkedin-square"></span></a></li>
-                        <li><a href="https://www.instagram.com/tandon.10/" target="blank"><span
-                                    class="fa fa-instagram"></span></a></li>
-                        <li><a href="https://twitter.com/tandan_suman" target="blank"><span
-                                    class="fa fa-twitter"></span></a></li>
-                        <li><a href="https://github.com/tandon1999" target="blank"><span
-                                    class="fa fa-github"></span></a></li>
-                        <li><a href="https://wa.me/+918072309905" target="blank"><span
-                                    class="fa fa-whatsapp">&nbsp;&nbsp;&nbsp;</span></a></li>
-                    </ul>
-                     </div>  -->
+               
                 <!-- toggle switch for light and dark theme -->
-                <div class="mobile-position">
+                <div class="mobile-position" >
                     <nav class="navigation">
                         <div class="theme-switch-wrapper">
                             <label class="theme-switch" for="checkbox">
@@ -95,11 +84,12 @@
     <!-- //header -->
 
     <!-- banner section -->
-    <section id="home" class="w3l-banner py-5">
+    <section id="home" class="w3l-banner py-5" >
 
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 col-sm-12 mt-lg-0 mt-4">
+                    <div class="animate-left">
                     <span class="title-small">Hello</span>
                     <h1 class="mb-2 title"> <span>I'm</span> Suman</h1>
                     <h1 class="mb-4 title"> a <span class="typed-text"></span><span class="cursor">&nbsp</span></h1>
@@ -110,6 +100,7 @@
                     <div class="mt-sm-5 mt-4">
                         <a class="btn btn-primary btn-style mr-2" href="contact.html"> Connect </a>
                         <!-- <a class="btn btn-outline-primary btn-style mr-2" href="#portfolio"> Portfolio </a> -->
+                    </div>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-8 col-sm-10 mt-lg-0 mt-4">
@@ -122,6 +113,8 @@
 
         </div>
     </section>
+
+    
     <br><br><br><br><br>
 
 
@@ -146,8 +139,9 @@
                 interested in working with me, please don't hesitate to contact me so we can discuss your projects in
                 detail.</p>
             <div class="mt-5">
-                <a href="Suman_Tandan.pdf" download="my_resume" class="btn btn-style btn-primary"
-                    target="blank">Resume</a>
+             <div> <a href="Suman_Tandan.pdf" download="my_resume" class="btn btn-style btn-primary"
+                    target="blank">Resume <i class="fa fa-file-pdf-o"
+                   ></i></a></div>
             </div>
         </div>
     </div>
@@ -883,6 +877,22 @@
         });
         </script>
 
+<script>
+    const touchMe = document.querySelector('.touch-me');
+
+touchMe.addEventListener('mousedown', function() {
+  touchMe.style.transform = 'scale(0.8)';
+});
+
+touchMe.addEventListener('mouseup', function() {
+  touchMe.style.transform = 'scale(1)';
+});
+
+touchMe.addEventListener('mouseleave', function() {
+  touchMe.style.transform = 'scale(1)';
+});
+
+</script>
 </body>
 
 </html>

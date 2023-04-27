@@ -583,6 +583,9 @@ mark,
     max-width: 90%;
     height: auto;
     border-radius: 100px;
+    opacity: 0;
+    animation: zoomIn 1s ease forwards;
+    animation-delay: 0.5s; 
 }
 
 
@@ -4512,16 +4515,21 @@ input[type="button"].btn-block {
 }
 
 .nav {
-    display: flex;
+    display: inline-block;
     flex-wrap: wrap;
     padding-left: 0;
     margin-bottom: 0;
     list-style: none;
+    transition: .3s;
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
+    animation-delay: calc(.2s * var(--i));
 }
 
 .nav-link {
     display: block;
     padding: 0.5rem 1rem;
+    
 }
 
 .nav-link:hover,
@@ -17140,6 +17148,160 @@ div#small-dialog iframe {
       transform: scale(1);
     }
   }
+   
+
+  .flag{
+    width: 35px;
+    height: 35px;
+    margin-top: -13px;
+  }
+
+  
+  /*skills*/
+ 
+
+
+
+
+
+/*education*/
+education section
+.home-social{
+    margin-bottom: 120px;
+}
   
 
- 
+.education-container{
+    row-gap: 32px;
+    margin-bottom: 40px;
+}
+
+.education-content{
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+}
+
+.education-year, .education-course{
+    font-size: var(--h3);
+    margin-bottom: 4px;
+}
+
+.education-institute, .education-marks{
+    display: block;
+    font-size: var(--smaller);
+}
+
+.education-institute, .education-year{
+    text-align: right;
+}
+
+.education-timer{
+    padding: 0 50px;
+    justify-self: center;
+}
+
+.education-rounder{
+    display: inline-block;
+    position: relative;
+    width: 12px;
+    height: 12px;
+    background-color: var(--main-color-text);
+    border-radius: 50%;
+}
+
+.education-rounder::before{
+    content: '';
+    position: absolute;
+    transform: translate(-5px, -5px);
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--main-color-text);
+    border-radius: 50%;
+}
+
+.education-line{
+    display: block;
+    height: 120%;
+    width: 2px;
+    background-color: var(--main-color-text);
+    transform: translate(5px,-6.5px);
+}
+
+
+  
+
+
+
+:root{
+ /* colors */
+ --main-color: linear-gradient(to bottom right, #f12711 0%, #e75313 100%);
+ --main-color-text: var(--indigo);
+ --main-color-dark:linear-gradient(to bottom right, #d41e0a 0%, #f12711 100%); 
+ --main-color-dark-text:  #921406;
+ --main-color-darker: #00001e;
+ --light-color: #eae7e6;
+ --lighter-color: #fffafa;
+ --text-color:#ddd;
+
+ /* font-size */
+ --h1: 24px;
+ --h2: 20px;
+ --h3: 16px;
+ --normal: 15px;
+ --small: 13px;
+ --smaller: 12px;
+}
+
+@media screen and (min-width:768px){
+ :root{
+     --h1: 36px;
+     --h2: 24px;
+     --h3: 20px;
+     --normal: 16px;
+     --small: 14px;
+     --smaller: 13px;
+ }
+}
+
+
+.animate-left {
+    animation: slide-in-left 1s ease forwards;
+}
+
+.animate-right {
+    animation: slide-in-right 1s ease forwards;
+}
+
+@keyframes slide-in-left {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-right {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+  
