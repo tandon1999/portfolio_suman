@@ -165,14 +165,18 @@
                             <div class="text-right">
                                 <button type="submit" class="btn btn-primary btn-style mt-4">Send Message</button>
                             </div>
+                            
                             <br>
                             <div class="alert">Your message sent</div>
                         </form>
+                        
+                          
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    
     <!-- /contact1 -->
     <div class="map-iframe">
 
@@ -190,7 +194,10 @@
                     <div class="col-lg-8 footer-left">
                         <p class="m-0">Suman © Copyright 2020. Design by <a href="https://www.instagram.com/tandon.10/"
                                 target="blank">Me</a></p>
+                               
+                                    
                     </div>
+                 
                     <div class="col-lg-4 footer-right text-lg-right text-center mt-lg-0 mt-3">
                         <ul class="social m-0 p-0">
                             <li><a href="https://www.facebook.com/suman.tandan.1999/" target="blank"><span
@@ -469,6 +476,33 @@
 
     </script>
 
+<!-- Button to open the popup -->
+<button onclick="openPopup()">Rate This Portfolio</button>
+
+<!-- The popup -->
+<div id="popup">
+  <div class="popup-content">
+    <form method="post" action="submit_rating.php">
+      <p>Please rate this portfolio:</p>
+      <div class="rating-options">
+        <input type="radio" name="rating" id="rating1" value="1">
+        <label for="rating1">1</label>
+        <input type="radio" name="rating" id="rating2" value="2">
+        <label for="rating2">2</label>
+        <input type="radio" name="rating" id="rating3" value="3">
+        <label for="rating3">3</label>
+        <input type="radio" name="rating" id="rating4" value="4">
+        <label for="rating4">4</label>
+        <input type="radio" name="rating" id="rating5" value="5">
+        <label for="rating5">5</label>
+      </div>
+      <br>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+</div>
+
+<script src="assets/js/popup.js"></script>
 </body>
 
 </html>
