@@ -476,11 +476,11 @@
 
     </script>
 
-<!-- Button to open the popup -->
-<button onclick="openPopup()">Rate This Portfolio</button>
+<!-- Button to open the popup
+<button onclick="openPopup()">Rate This Portfolio</button> -->
 
 <!-- The popup -->
-<div id="popup">
+<!-- <div id="popup">
   <div class="popup-content">
     <form method="post" action="submit_rating.php">
       <p>Please rate this portfolio:</p>
@@ -500,9 +500,25 @@
       <input type="submit" value="Submit">
     </form>
   </div>
-</div>
+</div> -->
+
+<div class="rating-container">
+    <h3>Rate this portfolio:</h3>
+    <div class="stars">
+      <span class="star" onclick="rate(1)">☆</span>
+      <span class="star" onclick="rate(2)">☆</span>
+      <span class="star" onclick="rate(3)">☆</span>
+      <span class="star" onclick="rate(4)">☆</span>
+      <span class="star" onclick="rate(5)">☆</span>
+    </div>
+    <p class="status"></p>
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-database.js"></script>  
+  
 
 <script src="assets/js/popup.js"></script>
+<script src="assets/js/rating.js"></script>
 </body>
 
 </html>
