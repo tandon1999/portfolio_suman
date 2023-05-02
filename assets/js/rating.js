@@ -4,62 +4,35 @@
 // Initialize Firebase
 
 var firebaseConfig = {
-    apiKey: "AIzaSyB_0EYkI9ooK51euhCuWb586HxYzZoB4WQ",
-    authDomain: "ratings-1b61a.firebaseapp.com",
-    projectId: "ratings-1b61a",
-    storageBucket: "ratings-1b61a.appspot.com",
-    messagingSenderId: "112433411968",
-    appId: "1:112433411968:web:a1a302af60d301d0ca3365",
-    measurementId: "G-ZM5KY7YQ4S"
+  apiKey: "AIzaSyDITQZQ_Hse2ynWZE9fQBuxl9U4pFKOtwA",
+  authDomain: "rating-1336a.firebaseapp.com",
+  databaseURL: "https://rating-1336a-default-rtdb.firebaseio.com",
+  projectId: "rating-1336a",
+  storageBucket: "rating-1336a.appspot.com",
+  messagingSenderId: "665805130983",
+  appId: "1:665805130983:web:3caf4e8c180988e92f6642",
+  measurementId: "G-VP17V8RD33"
   };
   
   firebase.initializeApp(firebaseConfig);
   
   // Get a reference to the ratings collection in Firebase
-  var ratingsRef = firebase.firestore().collection("ratings");
+  var ratingsRef = firebase.firestore().collection("ratingsuman");
   
-  // Get references to the HTML elements
-  var stars = document.querySelectorAll(".star");
-  var status = document.querySelector(".status");
-  
-  // Set the default rating to 0
-  var rating = 0;
-  
-  // Add a click event listener to each star
-  stars.forEach(function(star) {
-    star.addEventListener("click", function() {
-      // Get the rating value from the star
-      rating = parseInt(this.getAttribute("data-value"));
-  
-      // Set the active class on the clicked star and all previous stars
-      stars.forEach(function(s, i) {
-        if (i < rating) {
-          s.classList.add("active");
-        } else {
-          s.classList.remove("active");
-        }
-      });
-    });
-  });
-  
-  // Add a submit event listener to the form
-  document.querySelector("form").addEventListener("submit", function(e) {
-    e.preventDefault();
-  
-    // Add the rating to Firebase
-    ratingsRef.add({
-      value: rating
-    })
-    .then(function() {
-      // Show a success message
-      status.innerText = "Thank you for rating this portfolio!";
-      status.style.color = "#45ba52";
-    })
-    .catch(function(error) {
-      // Show an error message
-      status.innerText = "An error occurred. Please try again later.";
-      status.style.color = "#ff4136";
-      console.error(error);
-    });
-  });
-  
+ // Add the rating to Firebase
+console.log("Adding rating:", ratingsuman);
+ratingsRef.add({
+  value: rating
+})
+.then(function() {
+  // Show a success message
+  console.log("Rating added successfully!");
+  status.innerText = "Thank you for rating this portfolio!";
+  status.style.color = "#45ba52";
+})
+.catch(function(error) {
+  // Show an error message
+  console.error("Error adding rating:", error);
+  status.innerText = "An error occurred. Please try again later.";
+  status.style.color = "#ff4136";
+});

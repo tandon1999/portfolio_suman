@@ -1,9 +1,9 @@
 <?php
 // Set your database credentials
-$dbHost = 'bnhe65necx34vae9apo3-mysql.services.clever-cloud.com';
-$dbName = 'bnhe65necx34vae9apo3';
-$dbUsername = 'u7srq0f3poefbkuw';
-$dbPassword = 'qcN4sgGjrFaOcqHyOLCk';
+$dbHost = 'localhost';
+$dbName = 'id20685194_ratingsuman	';
+$dbUsername = 'id20685194_root	';
+$dbPassword = 'ivTG*7$qV7V^^zPv#7NJ';
 
 // Connect to your database using PDO
 try {
