@@ -17054,6 +17054,7 @@ div#small-dialog iframe {
 }  */
 
 .carousel-indicators {
+    position: absolute;
     left: 50%;
     bottom: -6%;
     transform: translateX(-50%);
